@@ -2,6 +2,6 @@
 easy way to add job garages to your jobs
 
 Requirements
--ESX
+-ESX-legacy
 -bt-target
 -nh-menu
