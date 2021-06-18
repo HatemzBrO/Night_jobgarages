@@ -6,8 +6,10 @@ ESX.RegisterServerCallback('night_garage:checkmoney', function(source,cb, money)
 
     if money ~= nil then
         if has >= money then
+            print('good')
             cb(true)
         else
+            print('no good')
             cb(false)
         end
     end
@@ -16,15 +18,17 @@ end)
 
 ESX.RegisterServerCallback('night_garage:checkbank', function(source,cb, account)
     local xPlayer = ESX.GetPlayerFromId(source) 
-    local has = xPlayer.getAccount('bank')
+    local bank = xPlayer.getAccount(account)["money"]
 
-    if account ~= nil then
-        if has >= account then
-            cb(true)
-        else
-            cb(false)
-        end
+    
+    if bank >= account then
+        print(''.. bank ..'')
+        cb(true)
+    else
+            
+        cb(false)
     end
+   
 
 end) 
 
