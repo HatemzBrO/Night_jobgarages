@@ -1,5 +1,5 @@
 # Night_jobgarages
-easy way to add job garages to your jobs
+police and ems garage, easy to add more
 
 REQUIREMENTS
 -ESX-legacy
