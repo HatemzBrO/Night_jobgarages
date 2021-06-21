@@ -367,7 +367,7 @@ Citizen.CreateThread(function()
         options = {
             {
                 event = Config.event,
-                icon = 'fas fa-glass-martini-alt',
+                icon = 'fas fa-car',
                 label = "Open police garage"
             },
         },
@@ -379,13 +379,14 @@ Citizen.CreateThread(function()
         options = {
             {
                 event = Config.event2,
-                icon = 'fas fa-glass-martini-alt',
+                icon = 'fas fa-car',
                 label = "Open police garage"
             },
         },
         job = {Config.ambulancejob},
         distance = 1.5
     })
+
 end)
 
 
