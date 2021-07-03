@@ -1,4 +1,6 @@
+ESX = nil
 
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 ESX.RegisterServerCallback('night_garage:checkmoney', function(source,cb, money)
     local xPlayer = ESX.GetPlayerFromId(source) 
